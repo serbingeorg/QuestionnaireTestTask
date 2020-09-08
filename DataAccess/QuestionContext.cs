@@ -12,11 +12,12 @@ namespace QuestionnaireTestTask.Models
         public DbSet<Answer> Answers { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Person> People { get; set; }
+         public DbSet<Questionnaire> Questionnaires { get; set; }
 
-        public QuestionContext(DbContextOptions<QuestionContext> options) 
+        public QuestionContext(DbContextOptions<QuestionContext> options)
             : base(options)
         {
-            Database.EnsureCreated();
+           Database.EnsureCreated();
         }
     }
 }
