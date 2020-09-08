@@ -64,7 +64,7 @@ namespace QuestionnareTestTask
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Questionnaire");
-                //c.RoutePrefix = string.Empty;
+               // c.RoutePrefix = string.Empty;
             });
 
             if (env.IsDevelopment())
