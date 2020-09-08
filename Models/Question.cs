@@ -9,5 +9,7 @@ namespace QuestionnaireTestTask.Models
     {
         public int Id { get; set; }
         public string Body { get; set; }
+        public Questionnaire Questionnaire { get; set; }
+        public List<Answer> Answers { get; set; }
     }
 }
