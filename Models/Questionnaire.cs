@@ -11,7 +11,13 @@ namespace QuestionnaireTestTask.Models
         public string Name { get; set; }
         public string Body { get; set; }
         public string URL { get; set; }
+        public int PersonId { get; set; }
+        public Question Question { get; set; }
         public List<Question> Questions { get; set; }
+        public Questionnaire()
+        {
+            Questions = new List<Question>();
+        }
 
     }
 }

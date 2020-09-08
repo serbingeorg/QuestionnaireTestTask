@@ -21,5 +21,10 @@ namespace QuestionnaireTestTask.Models
         public int Age { get; set; }
         public List<Questionnaire> Questionnaires { get; set; }
 
+        public Person()
+        {
+            Questionnaires = new List<Questionnaire>();
+        }
+
     }
 }
