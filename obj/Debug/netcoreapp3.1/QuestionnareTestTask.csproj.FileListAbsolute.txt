@@ -1,0 +1,10 @@
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\appsettings.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\QuestionnareTestTask.exe
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.csprojAssemblyReference.cache
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.AssemblyInfoInputs.cache
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.AssemblyInfo.cs
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.RazorTargetAssemblyInfo.cache
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\staticwebassets\QuestionnareTestTask.StaticWebAssets.Manifest.cache
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\staticwebassets\QuestionnareTestTask.StaticWebAssets.xml
