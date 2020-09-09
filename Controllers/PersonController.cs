@@ -19,7 +19,7 @@ namespace QuestionnareTestTask.Controllers
             _personService = personService;
         }
         [HttpGet]
-        public async Task<ActionResult> GetAll(Person person)
+        public async Task<ActionResult> GetAllQuestionnaires(Person person)
         {
             return Ok(await _personService.GetQuestionnairesByPerson(person));
         }
