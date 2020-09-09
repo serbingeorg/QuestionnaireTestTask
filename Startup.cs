@@ -30,7 +30,7 @@ namespace QuestionnareTestTask
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddDbContext<QuestionContext>(opt =>
+            services.AddDbContext<QuestionnaireDBContext>(opt =>
             opt.UseInMemoryDatabase("Questionnaire_DB"));
             services.AddControllers();
             services.AddSwaggerGen();
