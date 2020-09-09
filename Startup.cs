@@ -13,7 +13,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using QuestionnaireTestTask.Models;
-
+using QuestionnareTestTask.Services.Implementations;
+using QuestionnareTestTask.Services.Interfaces;
 
 namespace QuestionnareTestTask
 {
@@ -34,6 +35,7 @@ namespace QuestionnareTestTask
             opt.UseInMemoryDatabase("Questionnaire_DB"));
             services.AddControllers();
             services.AddSwaggerGen();
+            //services.AddScoped<IPersonService, PersonService>();
                
         }
 
