@@ -11,8 +11,8 @@ namespace QuestionnaireTestTask.Models
         public string Body { get; set; }
 
         public int QuestionnaireId { get; set; }
-        public Questionnaire Questionnaire { get; set; }
-        public List<Answer> Answers { get; set; }
+        public virtual Questionnaire Questionnaire { get; set; }
+        public virtual List<Answer> Answers { get; set; }
 
         public Question()
         {

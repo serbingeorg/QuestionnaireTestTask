@@ -19,7 +19,7 @@ namespace QuestionnaireTestTask.Models
         public string LastName { get; set; }
 
         public int Age { get; set; }
-        public List<Questionnaire> Questionnaires { get; set; }
+        public virtual List<Questionnaire> Questionnaires { get; set; }
 
         public Person()
         {
