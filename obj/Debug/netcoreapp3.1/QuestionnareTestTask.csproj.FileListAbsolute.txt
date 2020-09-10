@@ -64,6 +64,8 @@ D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\Questionn
 D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.pdb
 D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.genruntimeconfig.cache
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
-D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.csproj.CoreCompileInputs.cache
-D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cs
-D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cache
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll

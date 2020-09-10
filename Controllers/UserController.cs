@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace QuestionnareTestTask.Controllers
 {
     [ApiController]
-    [Route("GetAllQuestionnaires")]
+    [Route("api/GetAllQuestionnaires")]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;

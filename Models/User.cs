@@ -19,11 +19,11 @@ namespace QuestionnaireTestTask.Models
         public string LastName { get; set; }
 
         public int Age { get; set; }
-        public virtual List<Questionnaire> Questionnaires { get; set; }
+        public virtual ICollection<Questionnaire> Questionnaires { get; set; }
 
         public User()
         {
-            Questionnaires = new List<Questionnaire>();
+            Questionnaires = new HashSet<Questionnaire>();
         }
 
     }

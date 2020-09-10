@@ -12,11 +12,11 @@ namespace QuestionnaireTestTask.Models
 
         public int QuestionnaireId { get; set; }
         public virtual Questionnaire Questionnaire { get; set; }
-        public virtual List<Answer> Answers { get; set; }
+        public virtual ICollection<Answer> Answers { get; set; }
 
         public Question()
         {
-            Answers = new List<Answer>();
+            Answers = new HashSet<Answer>();
         }
     }
 }

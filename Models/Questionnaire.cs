@@ -13,10 +13,10 @@ namespace QuestionnaireTestTask.Models
         public string URL { get; set; }
         public int UserId { get; set; }
         public virtual Question Question { get; set; }
-        public virtual List<Question> Questions { get; set; }
+        public virtual ICollection<Question> Questions { get; set; }
         public Questionnaire()
         {
-            Questions = new List<Question>();
+            Questions = new HashSet<Question>();
         }
 
     }
