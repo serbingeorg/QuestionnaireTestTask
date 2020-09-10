@@ -69,3 +69,15 @@ D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.csproj.CoreCompileInputs.cache
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cs
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cache
