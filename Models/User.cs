@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuestionnaireTestTask.Models
 {
-    public class Person
+    public class User
     {
         public int Id { get; set; }
 
@@ -21,7 +21,7 @@ namespace QuestionnaireTestTask.Models
         public int Age { get; set; }
         public virtual List<Questionnaire> Questionnaires { get; set; }
 
-        public Person()
+        public User()
         {
             Questionnaires = new List<Questionnaire>();
         }

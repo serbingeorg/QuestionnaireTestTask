@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace QuestionnareTestTask.Services.Interfaces
 {
-    public interface IPersonService
+    public interface IUserService
     {
-        Task<IEnumerable<QuestionnaireResponse>> GetQuestionnairesByPerson(Person person);
+        Task<IEnumerable<QuestionnaireResponse>> GetQuestionnairesByPerson(User user);
     }
 }

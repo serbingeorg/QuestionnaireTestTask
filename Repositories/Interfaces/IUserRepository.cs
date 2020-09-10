@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace QuestionnareTestTask.Repositories.Interfaces
 {
-   public interface IPersonRepository : IBaseRepository<Person>
+   public interface IUserRepository : IBaseRepository<User>
     {
-        Task<IEnumerable<Questionnaire>> GetQuestionnairesByPerson(Person person);
+        Task<IEnumerable<Questionnaire>> GetQuestionnairesByPerson(User user);
     }
 }
