@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuestionnaireTestTask.Models  
 {
-    public class User
+    public class User 
     {
         public int Id { get; set; }
 

@@ -32,9 +32,11 @@ namespace QuestionnareTestTask
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+
             services.AddDbContext<QuestionnaireDBContext>(options =>
-            options.UseInMemoryDatabase("Questionnaire_DB"));
+            {
+                options.UseInMemoryDatabase("Questionnaire_DB");
+            });
             services.AddControllers();
             services.AddSwaggerGen();
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));

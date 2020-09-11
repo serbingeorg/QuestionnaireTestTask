@@ -8,5 +8,8 @@ namespace QuestionnareTestTask.Controllers
 {
     public class QuestionController : ControllerBase
     {
+        //create question
+        //add answer
+        //create answer
     }
 }
