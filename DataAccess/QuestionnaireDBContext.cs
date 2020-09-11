@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,10 @@ namespace QuestionnaireTestTask.Models
 
         protected override void OnModelCreating (ModelBuilder modelBuilder)
         {
+            
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Questionnaires);
         }
     }
 }

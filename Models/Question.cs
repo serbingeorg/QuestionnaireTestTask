@@ -9,11 +9,9 @@ namespace QuestionnaireTestTask.Models
     {
         public int Id { get; set; }
         public string Body { get; set; }
-
         public int QuestionnaireId { get; set; }
         public virtual Questionnaire Questionnaire { get; set; }
         public virtual ICollection<Answer> Answers { get; set; }
-
         public Question()
         {
             Answers = new HashSet<Answer>();

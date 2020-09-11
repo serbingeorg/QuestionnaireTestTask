@@ -33,8 +33,8 @@ namespace QuestionnareTestTask
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddDbContext<QuestionnaireDBContext>(opt =>
-            opt.UseInMemoryDatabase("Questionnaire_DB"));
+            services.AddDbContext<QuestionnaireDBContext>(options =>
+            options.UseInMemoryDatabase("Questionnaire_DB"));
             services.AddControllers();
             services.AddSwaggerGen();
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
