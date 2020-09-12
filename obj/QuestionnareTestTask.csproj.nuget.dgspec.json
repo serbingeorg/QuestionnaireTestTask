@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj": {}
+    "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj": {}
   },
   "projects": {
-    "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj": {
+    "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj",
+        "projectUniqueName": "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj",
         "projectName": "QuestionnareTestTask",
-        "projectPath": "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj",
-        "packagesPath": "C:\\Users\\GeekGroup\\.nuget\\packages\\",
-        "outputPath": "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\obj\\",
+        "projectPath": "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj",
+        "packagesPath": "C:\\Users\\Serbin_Yurii\\.nuget\\packages\\",
+        "outputPath": "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\GeekGroup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Serbin_Yurii\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

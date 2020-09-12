@@ -18,10 +18,10 @@ namespace QuestionnaireTestTask.Models
         [MaxLength(50)]
         public string LastName { get; set; }
         public int Age { get; set; }
-        public virtual ICollection<Questionnaire> Questionnaires { get; set; }
+        public  ICollection<Questionnaire> Questionnaires { get; set; }
         public User()
         {
-            Questionnaires = new HashSet<Questionnaire>();
+            Questionnaires = new List<Questionnaire>();
         }
 
     }

@@ -35,7 +35,7 @@ namespace QuestionnareTestTask
 
             services.AddDbContext<QuestionnaireDBContext>(options =>
             {
-                options.UseInMemoryDatabase("Questionnaire_DB");
+                options.UseSqlServer(Configuration.GetConnectionString("QuestionnaireDBConnection"));
             });
             services.AddControllers();
             services.AddSwaggerGen();

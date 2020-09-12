@@ -18,15 +18,14 @@ namespace QuestionnaireTestTask.Models
         public QuestionnaireDBContext(DbContextOptions<QuestionnaireDBContext> options)
             : base(options)
         {
-           Database.EnsureCreated();
+           //Database.EnsureCreated();
         }
 
         protected override void OnModelCreating (ModelBuilder modelBuilder)
         {
             
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<User>()
-                .HasMany(u => u.Questionnaires);
+          
         }
     }
 }
