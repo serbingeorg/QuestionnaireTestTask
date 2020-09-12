@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QuestionnaireTestTask.Models;
 
 namespace QuestionnareTestTask.Migrations
 {
     [DbContext(typeof(QuestionnaireDBContext))]
-    partial class QuestionnaireDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200912143726_QuestionnaireDB")]
+    partial class QuestionnaireDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
