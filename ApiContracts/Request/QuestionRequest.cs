@@ -1,17 +1,15 @@
-﻿using QuestionnareTestTask.ApiContracts;
-using QuestionnareTestTask.Models;
+﻿using QuestionnareTestTask.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace QuestionnareTestTask.ApiContracts.Response
+namespace QuestionnareTestTask.ApiContracts.Request
 {
-    public class QuestionResponse
+    public class QuestionRequest
     {
         public int Id { get; set; }
         public string Body { get; set; }
         public AnswerType Type { get; set; }
-        public List<AnswerResponse> Answers { get; set; }
     }
 }
