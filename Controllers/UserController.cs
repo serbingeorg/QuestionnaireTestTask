@@ -18,8 +18,8 @@ namespace QuestionnareTestTask.Controllers
         {
             _userService = userService;
         }
-        [HttpGet]
-        public async Task<ActionResult> GetAllQuestionnaires(User user)
+        [HttpPost]
+        public async Task<ActionResult> GetAllQuestionnaires( User user)
         {
             return Ok(await _userService.GetQuestionnairesByPerson(user));
         }

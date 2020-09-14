@@ -14,11 +14,10 @@ namespace QuestionnareTestTask.Repositories.Implementations
         { }
         public async Task<IEnumerable<Questionnaire>> GetQuestionnairesByPerson(User user)
         {
-            //var res = await _questionnaireDBContext.Users.Include(i => i.Questionnaires).FirstOrDefaultAsync(i => i.Id == user.Id);
-            //return (IEnumerable<Questionnaire>)res.Questionnaires.Select(i => i.Question);
-            return null;
+            var res = await _questionnaireDBContext.Users.Include(i => i.Questionnaires).FirstOrDefaultAsync(i => i.Id == user.Id);
+            return (IEnumerable<Questionnaire>)res.Questionnaires.Select(i => i.Questions);
+           
         }
     }
 
 }
-//.ThenInclude(i => i.Question)

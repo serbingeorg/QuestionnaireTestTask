@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj": {}
+    "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj": {}
   },
   "projects": {
-    "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj": {
+    "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj",
+        "projectUniqueName": "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj",
         "projectName": "QuestionnareTestTask",
-        "projectPath": "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj",
-        "packagesPath": "C:\\Users\\Serbin_Yurii\\.nuget\\packages\\",
-        "outputPath": "D:\\Progects\\QuestionnaireTestTask1\\QuestionnareTestTask\\obj\\",
+        "projectPath": "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\QuestionnareTestTask.csproj",
+        "packagesPath": "C:\\Users\\GeekGroup\\.nuget\\packages\\",
+        "outputPath": "D:\\QuestionnaireTestTask1\\QuestionnareTestTask\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Serbin_Yurii\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GeekGroup\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
