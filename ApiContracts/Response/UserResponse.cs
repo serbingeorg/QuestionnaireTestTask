@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace QuestionnareTestTask.ApiContracts
+namespace QuestionnareTestTask.ApiContracts.Response
 {
     public class UserResponse
     {

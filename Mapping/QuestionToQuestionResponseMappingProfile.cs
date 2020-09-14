@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using QuestionnaireTestTask.Models;
-using QuestionnareTestTask.Models.DTO;
+using QuestionnareTestTask.ApiContracts.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
