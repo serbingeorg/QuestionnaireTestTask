@@ -1,4 +1,5 @@
-﻿using QuestionnareTestTask.ApiContracts.Request;
+﻿using QuestionnaireTestTask.Models;
+using QuestionnareTestTask.ApiContracts.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace QuestionnareTestTask.Services.Interfaces
    public interface IQuestionnaireService
     {
         Task<bool> CreateAsync(QuestionnaireRequest questionnaireRequest);
+        Task<Questionnaire> GetByIdAsync(int id);
     }
 }

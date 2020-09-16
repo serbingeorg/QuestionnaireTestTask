@@ -26,5 +26,10 @@ namespace QuestionnareTestTask.Services.Implementations
             Questionnaire questionnaire = _mapper.Map<QuestionnaireRequest, Questionnaire>(questionnaireRequest);
             return await _questionnaireRepository.AddAsync(questionnaire);
         }
+
+        public async Task<Questionnaire> GetByIdAsync(int id)
+        {
+           return await _questionnaireRepository.GetByIdAsync(id);
+        }
     }
 }

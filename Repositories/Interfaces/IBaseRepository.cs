@@ -8,5 +8,6 @@ namespace QuestionnareTestTask.Repositories.Interfaces
     public interface IBaseRepository <T> where T : class
     {
         Task<bool> AddAsync(T entity);
+        Task<T> GetByIdAsync(int id);
     }
 }

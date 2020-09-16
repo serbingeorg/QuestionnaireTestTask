@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace QuestionnareTestTask.Controllers
 {
     [ApiController]
-    [Route("api/GetAllQuestionnaires")]
+    [Route("api/GetAllQuestionnairesByPersonid")]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -19,9 +19,9 @@ namespace QuestionnareTestTask.Controllers
             _userService = userService;
         }
         [HttpPost]
-        public async Task<ActionResult> GetAllQuestionnaires( User user)
+        public async Task<ActionResult> GetAllQuestionnaires( int id)
         {
-            return Ok(await _userService.GetQuestionnairesByPerson(user));
+            return Ok(await _userService.GetQuestionnairesByPersonId(id));
         }
 
 

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using QuestionnaireTestTask.Models;
 using QuestionnareTestTask.ApiContracts.Request;
 using QuestionnareTestTask.Services.Interfaces;
 using System;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace QuestionnareTestTask.Controllers
 {
+    [Route("api/[Controller]")]
     public class QuestionnaireController : ControllerBase
     {
         private readonly IQuestionnaireService _questionnaireService;
@@ -22,6 +24,15 @@ namespace QuestionnareTestTask.Controllers
         {
             await _questionnaireService.CreateAsync(questionnaireRequest);
             return Created("","");
+        }
+
+        [HttpGet("api/questionnaires/{questionnaireid}")]  
+        public async Task<IActionResult> Get([FromRoute] int questionnaireid)
+        {
+            Questionnaire questionnaire = await _questionnaireService.GetByIdAsync(questionnaireid);
+            if (questionnaire == null)
+                return NotFound();
+            return Ok(questionnaire);
         }
 
     }

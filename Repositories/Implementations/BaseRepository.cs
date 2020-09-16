@@ -22,5 +22,10 @@ namespace QuestionnareTestTask.Repositories.Implementations
             int rowsCreated = await _questionnaireDBContext.SaveChangesAsync();
             return rowsCreated > 0;
         }
+
+        public async Task<T> GetByIdAsync(int id)
+        {
+           return await _questionnaireDBContext.Set<T>().FindAsync(id);
+        }
     }
 }
