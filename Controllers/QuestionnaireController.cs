@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace QuestionnareTestTask.Controllers
 {
-    [Route("api/[Controller]")]
+    //[Route("api/[Controller]")]
     public class QuestionnaireController : ControllerBase
     {
         private readonly IQuestionnaireService _questionnaireService;
