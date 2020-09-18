@@ -15,9 +15,9 @@ namespace QuestionnareTestTask.Repositories.Implementations
 
         }
 
-        public async Task<Questionnaire> GetByIdNoTracked(int id)
-        {
-           return await _questionnaireDBContext.Questionnaires.AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
-        }
+        //public async Task<Questionnaire> GetByIdNoTracked(int id)
+        //{
+        //   return await _questionnaireDBContext.Questionnaires.AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
+        //}
     }
 }
