@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace QuestionnareTestTask.Services.Interfaces
 {
-    public interface IQuestionService
+    public interface IAnswerService
     {
-        Task<bool> CreateAsync(QuestionRequest questionRequest);
-
+        Task<bool> CreateAsync(AnswerRequest answerRequest);
     }
 }

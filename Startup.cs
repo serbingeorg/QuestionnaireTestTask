@@ -47,6 +47,8 @@ namespace QuestionnareTestTask
             services.AddScoped<IQuestionnaireRepository, QuestionnaireRepository>();
             services.AddScoped<IQuestionRepository, QuestionRepository>();
             services.AddScoped<IQuestionService, QuestionService>();
+            services.AddScoped<IAnswerRepository, AnswerRepository>();
+            services.AddScoped<IAnswerService, AnswerService>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         }

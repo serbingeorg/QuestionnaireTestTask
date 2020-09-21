@@ -8,5 +8,6 @@ namespace QuestionnareTestTask.Repositories.Interfaces
 {
     public interface IQuestionRepository : IBaseRepository<Question>
     {
+       
     }
 }

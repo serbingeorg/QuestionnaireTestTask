@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using QuestionnaireTestTask.Models;
 using QuestionnareTestTask.ApiContracts.Request;
+using QuestionnareTestTask.ApiContracts.Response;
 using QuestionnareTestTask.Repositories.Interfaces;
 using QuestionnareTestTask.Services.Interfaces;
 using System;
@@ -30,6 +31,13 @@ namespace QuestionnareTestTask.Services.Implementations
         public async Task<Questionnaire> GetByIdAsync(int id)
         {
            return await _questionnaireRepository.GetByIdAsync(id);
+        }
+
+        public async Task<IEnumerable<QuestionnaireResponse>> GetQuestionnairesByPersonId(int id)
+        {
+            IEnumerable<Questionnaire> questionnaires = await _questionnaireRepository.GetQuestionnairesByPersonId(id);
+            IEnumerable<QuestionnaireResponse> res = _mapper.Map<IEnumerable<Questionnaire>, IEnumerable<QuestionnaireResponse>>(questionnaires);
+            return res;
         }
     }
 }

@@ -9,5 +9,6 @@ namespace QuestionnareTestTask.Repositories.Interfaces
     public interface IQuestionnaireRepository : IBaseRepository<Questionnaire>
     {
         //Task<Questionnaire> GetByIdNoTracked(int id);
+        Task<IEnumerable<Questionnaire>> GetQuestionnairesByPersonId(int userId);
     }
 }

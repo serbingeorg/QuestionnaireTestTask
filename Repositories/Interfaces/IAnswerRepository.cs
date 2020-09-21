@@ -1,4 +1,5 @@
 ﻿using QuestionnaireTestTask.Models;
+using QuestionnareTestTask.Repositories.Implementations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace QuestionnareTestTask.Repositories.Interfaces
 {
-   public interface IUserRepository : IBaseRepository<User>
+    public interface IAnswerRepository : IBaseRepository<Answer>
     {
-       //s Task<IEnumerable<Questionnaire>> GetQuestionnairesByPersonId(int userId);
         
     }
 }

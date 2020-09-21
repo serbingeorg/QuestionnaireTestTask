@@ -14,6 +14,13 @@ namespace QuestionnareTestTask.Repositories.Implementations
         {
 
         }
+        public async Task<IEnumerable<Questionnaire>> GetQuestionnairesByPersonId(int userId)
+        {
+            //IEnumerable<Questionnaire> questionnaires1 = await _questionnaireDBContext.Users.Include(i => i.Questionnaires).Where(i => i.Id == userId).SelectMany(i=> i.Questionnaires).ToListAsync();
+            IEnumerable<Questionnaire> res = await _questionnaireDBContext.Questionnaires.Where(i => i.UserId == userId).ToListAsync();
+            return res;
+
+        }
 
         //public async Task<Questionnaire> GetByIdNoTracked(int id)
         //{

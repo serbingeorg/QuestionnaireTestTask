@@ -19,11 +19,11 @@ namespace QuestionnareTestTask.Services.Implementations
             _userRepository = userRepository;
             _mapper = mapper;
         }
-      public async Task<IEnumerable<QuestionnaireResponse>> GetQuestionnairesByPersonId(int  id)
-        {
-            IEnumerable<Questionnaire> questionnaires = await _userRepository.GetQuestionnairesByPersonId(id);
-            IEnumerable<QuestionnaireResponse> res = _mapper.Map<IEnumerable<Questionnaire>, IEnumerable<QuestionnaireResponse>> (questionnaires);
-            return res;
-        }
+      //public async Task<IEnumerable<QuestionnaireResponse>> GetQuestionnairesByPersonId(int  id)
+      //  {
+      //      IEnumerable<Questionnaire> questionnaires = await _userRepository.GetQuestionnairesByPersonId(id);
+      //      IEnumerable<QuestionnaireResponse> res = _mapper.Map<IEnumerable<Questionnaire>, IEnumerable<QuestionnaireResponse>> (questionnaires);
+      //      return res;
+      //  }
     }
 }

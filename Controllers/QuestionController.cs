@@ -16,14 +16,14 @@ namespace QuestionnareTestTask.Controllers
             _questionService = questionService;
         }
 
-        [HttpPost("api/questions")]
-        public async Task<IActionResult> Create ([FromBody] QuestionRequest questionRequest)
+        [HttpPost("api/question")]
+        public async Task<IActionResult> Create ( QuestionRequest questionRequest)
         {
             await _questionService.CreateAsync(questionRequest);
             return Created("", "");
         }
-        //create question
-        //add answer
-        //create answer
+       
+       
+      
     }
 }

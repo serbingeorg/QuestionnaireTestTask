@@ -18,21 +18,27 @@ namespace QuestionnareTestTask.Controllers
             _questionnaireService = questionnaireService;
         }
 
-        [HttpPost("api/questionnaires")]
+        [HttpPost("api/questionnaire")]
 
-        public async Task<IActionResult> Create([FromBody] QuestionnaireRequest questionnaireRequest)
+        public async Task<IActionResult> Create( QuestionnaireRequest questionnaireRequest)
         {
             await _questionnaireService.CreateAsync(questionnaireRequest);
             return Created("","");
         }
 
         [HttpGet("api/questionnaires/{questionnaireid}")]  
-        public async Task<IActionResult> Get([FromRoute] int questionnaireid)
+        public async Task<IActionResult> Get( int questionnaireid)
         {
             Questionnaire questionnaire = await _questionnaireService.GetByIdAsync(questionnaireid);
             if (questionnaire == null)
                 return NotFound();
             return Ok(questionnaire);
+        }
+
+        [HttpGet("api/questionnaires/GetAllQuestionnairesByPersonid")]
+        public async Task<ActionResult> GetAllQuestionnaires(int id)
+        {
+            return Ok(await _questionnaireService.GetQuestionnairesByPersonId(id));
         }
 
     }
