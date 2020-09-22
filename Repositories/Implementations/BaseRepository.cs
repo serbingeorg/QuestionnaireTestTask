@@ -22,10 +22,26 @@ namespace QuestionnareTestTask.Repositories.Implementations
             int rowsCreated = await _questionnaireDBContext.SaveChangesAsync();
             return rowsCreated > 0;
         }
-
         public async Task<T> GetByIdAsync(int id)
         {
-           return await _questionnaireDBContext.Set<T>().FindAsync(id);
+            return await _questionnaireDBContext.Set<T>().FindAsync(id);
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var item = await _questionnaireDBContext.Set<T>().FindAsync(id);
+            _questionnaireDBContext.Remove(item);
+            int rowsDeleted = await _questionnaireDBContext.SaveChangesAsync();
+            return rowsDeleted > 0;
+        }
+
+       
+
+        public async Task<bool> UpdateAsync(T entity)
+        {
+           _questionnaireDBContext.Set<T>().Update(entity);
+            int rowsUpdated = await _questionnaireDBContext.SaveChangesAsync();
+            return rowsUpdated > 0;
         }
     }
 }

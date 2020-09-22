@@ -13,5 +13,6 @@ namespace QuestionnareTestTask.Services.Interfaces
         Task<bool> CreateAsync(QuestionnaireRequest questionnaireRequest);
         Task<Questionnaire> GetByIdAsync(int id);
         Task<IEnumerable<QuestionnaireResponse>> GetQuestionnairesByPersonId(int id);
+        
     }
 }

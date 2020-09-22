@@ -78,9 +78,6 @@ D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
-D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.csproj.CoreCompileInputs.cache
-D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cs
-D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cache
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.csprojAssemblyReference.cache
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.AssemblyInfoInputs.cache
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.AssemblyInfo.cs
@@ -164,3 +161,7 @@ D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\staticwebassets\QuestionnareTestTask.StaticWebAssets.Manifest.cache
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\staticwebassets\QuestionnareTestTask.StaticWebAssets.xml
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.genruntimeconfig.cache
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.csproj.CoreCompileInputs.cache
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cs
+D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cache

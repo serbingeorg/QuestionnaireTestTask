@@ -25,5 +25,26 @@ namespace QuestionnareTestTask.Services.Implementations
             Question question = _mapper.Map<QuestionRequest, Question>(questionRequest);
             return await _questionRepository.AddAsync(question);
         }
+
+        public async Task<Question> GetByIdAsync(int id)
+        {
+            return await _questionRepository.GetByIdAsync(id);
+        }
+
+        public async Task<bool> UpdateAsync(int questionId, QuestionRequest questionRequest)
+        {
+            Question existingQuestion = await _questionRepository.GetByIdAsync(questionId);
+            if (existingQuestion == null)
+            {
+                return false;
+            }
+
+            existingQuestion.Body = questionRequest.Body;
+            existingQuestion.Type = questionRequest.Type;
+
+            return await _questionRepository.UpdateAsync(existingQuestion);
+        }
+
+        
     }
 }

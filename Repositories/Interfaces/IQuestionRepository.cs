@@ -8,6 +8,6 @@ namespace QuestionnareTestTask.Repositories.Interfaces
 {
     public interface IQuestionRepository : IBaseRepository<Question>
     {
-       
+        Task<Question> GetByIdNoTracked(int id);
     }
 }

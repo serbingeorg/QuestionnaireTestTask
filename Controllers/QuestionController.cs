@@ -23,7 +23,14 @@ namespace QuestionnareTestTask.Controllers
             return Created("", "");
         }
        
-       
-      
+        [HttpPut("api/questions/{questionId}")]
+       public async Task<IActionResult> Update(int questionId, QuestionRequest questionRequest)
+       {
+            bool updated = await _questionService.UpdateAsync(questionId, questionRequest);
+            if (updated)
+                return Ok(await _questionService.GetByIdAsync(questionId));
+            return NotFound();
+       }
+        //getallquestionsbyQuestionnaireId
     }
 }

@@ -1,4 +1,5 @@
-﻿using QuestionnaireTestTask.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using QuestionnaireTestTask.Models;
 using QuestionnareTestTask.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,14 @@ namespace QuestionnareTestTask.Repositories.Implementations
     {
         public QuestionRepository(QuestionnaireDBContext questionnaireDBContext) : base(questionnaireDBContext)
         {
+            
 
         }
-    }    
+
+        public async Task<Question> GetByIdNoTracked(int id)
+        {
+           return await _questionnaireDBContext.Questions.AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
+        }
+
+    }
 }

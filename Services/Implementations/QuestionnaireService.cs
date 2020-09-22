@@ -39,5 +39,7 @@ namespace QuestionnareTestTask.Services.Implementations
             IEnumerable<QuestionnaireResponse> res = _mapper.Map<IEnumerable<Questionnaire>, IEnumerable<QuestionnaireResponse>>(questionnaires);
             return res;
         }
+
+     
     }
 }
