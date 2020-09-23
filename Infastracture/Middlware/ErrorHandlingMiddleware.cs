@@ -15,7 +15,6 @@ namespace QuestionnareTestTask.Infastracture.Middlware
         {
             this.next = next;
         }
-
         public async Task Invoke(HttpContext context)
         {
             try
@@ -27,7 +26,6 @@ namespace QuestionnareTestTask.Infastracture.Middlware
                 await HandleExceptionAsync(context, ex);
             }
         }
-
         private static Task HandleExceptionAsync(HttpContext context, Exception ex)
         {
             var code = HttpStatusCode.InternalServerError; // 500 if unexpected

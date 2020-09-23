@@ -26,6 +26,11 @@ namespace QuestionnareTestTask.Services.Implementations
             return await _answerRepository.AddAsync(answer);
         }
 
+        public async Task<bool> DeleteByIdAsync(int id)
+        {
+            return await _answerRepository.DeleteAsync(id);
+        }
+
         public async Task<Answer> GetByIdAsync(int id)
         {
             return await _answerRepository.GetByIdAsync(id);

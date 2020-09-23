@@ -31,6 +31,12 @@ namespace QuestionnareTestTask.Controllers
                 return Ok(await _questionService.GetByIdAsync(questionId));
             return NotFound();
        }
+        [HttpDelete("api/questions/{questionId}")]
+        public async Task<IActionResult> Delete(int questionId)
+        {
+           return Ok( await _questionService.DeleteByIdAsync(questionId));
+
+        }
         //getallquestionsbyQuestionnaireId
     }
 }

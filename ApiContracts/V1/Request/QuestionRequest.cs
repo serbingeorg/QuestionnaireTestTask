@@ -11,5 +11,6 @@ namespace QuestionnareTestTask.ApiContracts.Request
         //public int Id { get; set; }
         public string Body { get; set; }
         public AnswerType Type { get; set; }
+        public int QuestionnaireId { get; set; }
     }
 }

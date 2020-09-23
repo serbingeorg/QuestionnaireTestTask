@@ -12,5 +12,6 @@ namespace QuestionnareTestTask.Services.Interfaces
         Task<bool> CreateAsync(AnswerRequest answerRequest);
         Task<bool> UpdateAsync(int answerId, AnswerRequest answerRequest);
         Task<Answer> GetByIdAsync(int id);
+        Task<bool> DeleteByIdAsync(int id);
     }
 }

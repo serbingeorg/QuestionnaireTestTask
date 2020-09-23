@@ -7,6 +7,10 @@ namespace QuestionnareTestTask.ApiContracts.Request
 {
     public class QuestionnaireRequest
     {
-        public int Id { get; set; }
+        // public int Id { get; set; }
+
+        public string Name { get; set; }
+        public string Body { get; set; }
+        public int UserId { get; set; }
     }
 }

@@ -12,6 +12,7 @@ namespace QuestionnareTestTask.Services.Interfaces
         Task<bool> CreateAsync(QuestionRequest questionRequest);
         Task<bool> UpdateAsync(int questionId, QuestionRequest questionRequest);
         Task<Question> GetByIdAsync(int id);
+        Task<bool> DeleteByIdAsync(int id);
 
 
     }
