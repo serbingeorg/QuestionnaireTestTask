@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 using QuestionnareTestTask.Models;
@@ -9,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace QuestionnaireTestTask.Models
 {
-    public class QuestionnaireDBContext : DbContext
+    public class QuestionnaireDBContext : IdentityDbContext <IdentityUser>
     {
         public DbSet<Answer> Answers { get; set; }
         public DbSet<Question> Questions { get; set; }
-        public DbSet<User> Users { get; set; }
+        //public DbSet<User> Users { get; set; }
         public DbSet<Questionnaire> Questionnaires { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
         public QuestionnaireDBContext(DbContextOptions<QuestionnaireDBContext> options)

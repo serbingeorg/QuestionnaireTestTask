@@ -6,6 +6,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using QuestionnaireTestTask.Models;
+using QuestionnareTestTask.Infastracture.Middlware;
 using QuestionnareTestTask.Repositories.Implementations;
 using QuestionnareTestTask.Repositories.Interfaces;
 using QuestionnareTestTask.Services.Implementations;
@@ -40,6 +42,9 @@ namespace QuestionnareTestTask
             });
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<QuestionnaireDBContext>();
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
@@ -63,6 +68,8 @@ namespace QuestionnareTestTask
                 c.RoutePrefix = string.Empty;
             });
 
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -73,6 +80,7 @@ namespace QuestionnareTestTask
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
