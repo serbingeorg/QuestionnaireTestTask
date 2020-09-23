@@ -1,8 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,18 +18,23 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using QuestionnaireTestTask.Models;
+using QuestionnareTestTask.Infastracture;
 using QuestionnareTestTask.Infastracture.Middlware;
+using QuestionnareTestTask.Options;
 using QuestionnareTestTask.Repositories.Implementations;
 using QuestionnareTestTask.Repositories.Interfaces;
 using QuestionnareTestTask.Services.Implementations;
 using QuestionnareTestTask.Services.Interfaces;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace QuestionnareTestTask
 {
     public class Startup
-    {
+    {        
+      
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -35,13 +45,75 @@ namespace QuestionnareTestTask
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            JwtSettings jwtSettings = new JwtSettings();
+            Configuration.Bind(nameof(jwtSettings), jwtSettings);
+            services.AddSingleton(jwtSettings);
+            var tokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSettings.Secret)),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                RequireExpirationTime = false,
+                ValidateLifetime = true
+            };
+            services.AddSingleton(tokenValidationParameters);
+            services.AddAuthorization();
+            services.AddAuthentication(i =>
+            {
+                i.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                i.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                i.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(i =>
+            {
+                i.SaveToken = true;
+                i.TokenValidationParameters = tokenValidationParameters;
+            });
 
             services.AddDbContext<QuestionnaireDBContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("QuestionnaireDBConnection"));
             });
             services.AddControllers();
-            services.AddSwaggerGen();
+            services
+                .AddMvc(options =>
+                {
+                    options.EnableEndpointRouting = false;
+                    options.Filters.Add<ValidationFilter>();
+                })
+                .AddFluentValidation(optinons => optinons.RegisterValidatorsFromAssemblyContaining<Startup>());
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "QuizCharp", Version = "v1" });
+                c.ExampleFilters();
+                c.AddSecurityDefinition("bearer", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    In = ParameterLocation.Header,
+                    Description = "Basic Authorization header using the Bearer scheme."
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "bearer"
+                            }
+                        },
+                        new string[]{}
+                    }
+                });
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });
+
+            services.AddSwaggerExamplesFromAssemblyOf<Startup>();
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<QuestionnaireDBContext>();
@@ -54,6 +126,7 @@ namespace QuestionnareTestTask
             services.AddScoped<IQuestionService, QuestionService>();
             services.AddScoped<IAnswerRepository, AnswerRepository>();
             services.AddScoped<IAnswerService, AnswerService>();
+            services.AddScoped<ITokenRepository, TokenRepository>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         }
