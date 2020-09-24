@@ -11,10 +11,10 @@ namespace QuestionnareTestTask.Controllers
 {
     public class IdentityController : ControllerBase
     {
-        private readonly IIdentityService _identtityService;
+        private readonly IIdentityService _identityService;
         public IdentityController(IIdentityService identityService)
         {
-            _identtityService = identityService;
+            _identityService = identityService;
         }
 
         [HttpPost("api/identity/register")]
@@ -27,7 +27,7 @@ namespace QuestionnareTestTask.Controllers
                     Errors = ModelState.Values.SelectMany(i => i.Errors.Select(j => j.ErrorMessage))
                 });
             }
-            var authResponse = await _identtityService.RegisterAsync(request.Email, request.Password);
+            var authResponse = await _identityService.RegisterAsync(request.Email, request.Password);
             if (!authResponse.Success)
             {
                 return BadRequest(new AuthFailedResponse()
@@ -45,7 +45,7 @@ namespace QuestionnareTestTask.Controllers
         [HttpPost("api/identity/login")]
         public async Task<IActionResult> Login([FromBody] UserLoginRequest request)
         {
-            var authResponse = await _identtityService.LoginAsync(request.Email, request.Password);
+            var authResponse = await _identityService.LoginAsync(request.Email, request.Password);
             if (!authResponse.Success)
             {
                 return BadRequest(new AuthFailedResponse()
@@ -63,7 +63,7 @@ namespace QuestionnareTestTask.Controllers
         [HttpPost("api/identity/refresh")]
         public async Task<IActionResult> Refresh([FromBody] RefreshTokenRequest request)
         {
-            var authResponse = await _identtityService.RefreshTokenAsync(request.Token, request.RefreshToken);
+            var authResponse = await _identityService.RefreshTokenAsync(request.Token, request.RefreshToken);
             if (!authResponse.Success)
             {
                 return BadRequest(new AuthFailedResponse()

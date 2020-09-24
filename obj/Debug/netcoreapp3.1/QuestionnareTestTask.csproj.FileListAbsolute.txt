@@ -189,3 +189,11 @@ D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FrontApp\package.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\QuestionnaireFront\angular.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\QuestionnaireFront\e2e\tsconfig.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\QuestionnaireFront\package-lock.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\QuestionnaireFront\package.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\QuestionnaireFront\tsconfig.app.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\QuestionnaireFront\tsconfig.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\QuestionnaireFront\tsconfig.spec.json
+D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\QuestionnaireFront\tslint.json

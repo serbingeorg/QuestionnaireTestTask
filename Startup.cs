@@ -127,6 +127,7 @@ namespace QuestionnareTestTask
             services.AddScoped<IAnswerRepository, AnswerRepository>();
             services.AddScoped<IAnswerService, AnswerService>();
             services.AddScoped<ITokenRepository, TokenRepository>();
+            services.AddScoped<IIdentityService, IdentityService>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         }
