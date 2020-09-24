@@ -84,7 +84,7 @@ namespace QuestionnareTestTask
                 .AddFluentValidation(optinons => optinons.RegisterValidatorsFromAssemblyContaining<Startup>());
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "QuizCharp", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Questionnaire", Version = "v1" });
                 c.ExampleFilters();
                 c.AddSecurityDefinition("bearer", new OpenApiSecurityScheme
                 {
@@ -108,9 +108,9 @@ namespace QuestionnareTestTask
                         new string[]{}
                     }
                 });
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
+               // var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+               // var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+               // c.IncludeXmlComments(xmlPath);
             });
 
             services.AddSwaggerExamplesFromAssemblyOf<Startup>();

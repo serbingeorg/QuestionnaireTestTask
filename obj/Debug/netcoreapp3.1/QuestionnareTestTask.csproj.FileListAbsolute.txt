@@ -176,3 +176,15 @@ D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentVal
 D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.csproj.CoreCompileInputs.cache
 D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cs
 D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cache
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Scrutor.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
