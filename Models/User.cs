@@ -9,14 +9,7 @@ namespace QuestionnaireTestTask.Models
 {
     public class User : IdentityUser
     {
-        //public int? Id { get; set; }
-
-        [Required]
-        [MaxLength(50)]
         public string FirstName { get; set; }
-
-        [Required]
-        [MaxLength(50)]
         public string LastName { get; set; }
         public int Age { get; set; }
         public  ICollection<Questionnaire> Questionnaires { get; set; }

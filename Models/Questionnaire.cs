@@ -12,7 +12,6 @@ namespace QuestionnaireTestTask.Models
         public string Body { get; set; }
         public string URL { get; set; }
         public int UserId { get; set; }
-        //public virtual Question Question { get; set; }
         public  ICollection<Question> Questions { get; set; }
         public Questionnaire()
         {

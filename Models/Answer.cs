@@ -7,7 +7,6 @@ namespace QuestionnaireTestTask.Models
 {
     public class Answer
     {
-
         public int Id { get; set; }
         public string Body { get; set; }
         public int QuestionId { get; set; }

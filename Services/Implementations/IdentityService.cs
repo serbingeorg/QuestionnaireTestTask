@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
+using QuestionnaireTestTask.Models;
 using QuestionnareTestTask.Models;
 using QuestionnareTestTask.Options;
 using QuestionnareTestTask.Repositories.Interfaces;
@@ -16,13 +17,13 @@ namespace QuestionnareTestTask.Services.Implementations
 {
     public class IdentityService : IIdentityService
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<User> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly JwtSettings _jwtSettings;
         private readonly TokenValidationParameters _tokenValidationParameters;
         private readonly ITokenRepository _tokenRepository;
         public IdentityService(
-             UserManager<IdentityUser> userManager,
+             UserManager<User> userManager,
             RoleManager<IdentityRole> roleManager,
             JwtSettings jwtSettings,
             TokenValidationParameters tokenValidationParameters,
@@ -107,7 +108,7 @@ namespace QuestionnareTestTask.Services.Implementations
                 };
             }
             var newUserId = Guid.NewGuid().ToString();
-            var newUser = new IdentityUser()
+            var newUser = new User()
             {
                 Id = newUserId,
                 Email = email,
@@ -154,7 +155,7 @@ namespace QuestionnareTestTask.Services.Implementations
                 jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256,
                 StringComparison.InvariantCultureIgnoreCase);
         }
-        private async Task<AuthenticationResult> GenerateAuthenticationResultForUserAsync(IdentityUser user)
+        private async Task<AuthenticationResult> GenerateAuthenticationResultForUserAsync(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_jwtSettings.Secret);

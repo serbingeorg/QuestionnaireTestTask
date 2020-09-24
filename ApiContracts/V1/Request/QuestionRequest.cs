@@ -8,7 +8,6 @@ namespace QuestionnareTestTask.ApiContracts.Request
 {
     public class QuestionRequest
     {
-        //public int Id { get; set; }
         public string Body { get; set; }
         public AnswerType Type { get; set; }
         public int QuestionnaireId { get; set; }

@@ -37,6 +37,6 @@ namespace QuestionnareTestTask.Controllers
            return Ok( await _questionService.DeleteByIdAsync(questionId));
 
         }
-        //getallquestionsbyQuestionnaireId
+
     }
 }

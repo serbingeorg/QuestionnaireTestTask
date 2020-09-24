@@ -7,7 +7,7 @@ namespace QuestionnareTestTask.Services.Interfaces
 {
     public interface IUserService
     {
-        //Task<IEnumerable<QuestionnaireResponse>> GetQuestionnairesByPersonId(int id);
+        
     }
 }
  
