@@ -114,7 +114,7 @@ namespace QuestionnareTestTask
             });
 
             services.AddSwaggerExamplesFromAssemblyOf<Startup>();
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<User, IdentityRole>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<QuestionnaireDBContext>();
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));

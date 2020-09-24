@@ -45,6 +45,7 @@ namespace QuestionnareTestTask.Services.Implementations
             }
 
             existingAnswer.Body = answerRequest.Body;
+            existingAnswer.TimesSelected = answerRequest.TimesSelected;
             return await _answerRepository.UpdateAsync(existingAnswer);
         }
     }

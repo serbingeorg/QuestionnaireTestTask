@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection.Metadata.Ecma335;
 using System.Linq;
 using System.Threading.Tasks;
+using QuestionnaireTestTask.Models;
 
 namespace QuestionnareTestTask.Models
 {
@@ -22,6 +23,6 @@ namespace QuestionnareTestTask.Models
         public string UserId { get; set; }
 
         [ForeignKey(nameof(UserId))]
-        public IdentityUser User { get; set; }
+        public User User { get; set; }
     }
 }
