@@ -173,9 +173,6 @@ D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\Swashbuck
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentValidation.dll
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
 D:\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
-D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.csproj.CoreCompileInputs.cache
-D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cs
-D:\QuestionnaireTestTask1\QuestionnareTestTask\obj\Debug\netcoreapp3.1\QuestionnareTestTask.MvcApplicationPartsAssemblyInfo.cache
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentValidation.dll
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
 D:\Progects\QuestionnaireTestTask1\QuestionnareTestTask\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
