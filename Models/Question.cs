@@ -13,10 +13,7 @@ namespace QuestionnaireTestTask.Models
         public int QuestionnaireId { get; set; }
         public  AnswerType Type { get; set; }
         public Questionnaire  Questionnaire  { get; set; }
-        public ICollection<Answer> Answers { get; set; }
-        public Question()
-        {
-            Answers = new List<Answer>();
-        }
+        public ICollection<Answer> Answers { get; set; } = new List<Answer>();
+       
     }
 }

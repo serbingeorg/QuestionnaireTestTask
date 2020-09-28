@@ -8,7 +8,7 @@ namespace QuestionnareTestTask.Repositories.Interfaces
 {
    public interface IUserRepository : IBaseRepository<User>
     {
-       //s Task<IEnumerable<Questionnaire>> GetQuestionnairesByPersonId(int userId);
+       
         
     }
 }

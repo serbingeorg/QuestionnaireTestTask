@@ -12,11 +12,8 @@ namespace QuestionnaireTestTask.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
-        public  ICollection<Questionnaire> Questionnaires { get; set; }
-        public User()
-        {
-            Questionnaires = new List<Questionnaire>();
-        }
+        public  ICollection<Questionnaire> Questionnaires { get; set; } = new List<Questionnaire>();
+       
 
     }
 }
