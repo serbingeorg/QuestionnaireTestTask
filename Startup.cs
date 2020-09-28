@@ -114,7 +114,7 @@ namespace QuestionnareTestTask
             services.AddIdentity<User, IdentityRole>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<QuestionnaireDBContext>();
-            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            //services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IQuestionnaireService, QuestionnaireService>();

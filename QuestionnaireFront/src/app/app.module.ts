@@ -15,4 +15,8 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+// get copyrightYear(){
+//   return (new Date).getFullYear();
+// }
