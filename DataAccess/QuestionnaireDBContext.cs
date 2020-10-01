@@ -17,6 +17,7 @@ namespace QuestionnaireTestTask.Models
         public DbSet<Question> Questions { get; set; }
         public DbSet<Questionnaire> Questionnaires { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<UniqUser> UniqUsers { get; set; }
         public QuestionnaireDBContext(DbContextOptions<QuestionnaireDBContext> options) : base(options) { }
         protected override void OnModelCreating (ModelBuilder modelBuilder)
         {

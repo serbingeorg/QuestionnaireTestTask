@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Questionnaire';
+  
   get copyrightYear(){
     return (new Date).getFullYear();
   }

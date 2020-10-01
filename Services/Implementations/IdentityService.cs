@@ -122,7 +122,7 @@ namespace QuestionnareTestTask.Services.Implementations
                     Errors = createdUser.Errors.Select(i => i.Description)
                 };
             }
-            await _userManager.AddClaimAsync(newUser, new Claim("post.view", "true"));
+            await _userManager.AddClaimAsync(newUser, new Claim("post.view", "true")); //what is it?
             return await GenerateAuthenticationResultForUserAsync(newUser);
         }
 
