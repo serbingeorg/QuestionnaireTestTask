@@ -10,7 +10,7 @@ using QuestionnaireTestTask.Models;
 namespace QuestionnareTestTask.Migrations
 {
     [DbContext(typeof(QuestionnaireDBContext))]
-    [Migration("20200924134131_Questionnaire_DB")]
+    [Migration("20201014142115_Questionnaire_DB")]
     partial class Questionnaire_DB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -250,14 +250,10 @@ namespace QuestionnareTestTask.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
